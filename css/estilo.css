@@ -1,6 +1,6 @@
 /*variavel*/
 :root{
-    --vermelho:red;
+    --vermelho:#E50914;
     --preto:#141414;
 }
 
@@ -10,19 +10,22 @@
     box-sizing: border-box;
 }
 body{
-    background-color:black;
+    background-color:var(--preto);
     font-family: 'Times New Roman', Georgia, 'Times New Roman', Times, serif;
+    color:#fff;
 }
 
-header.container{
+header .netflix-wrapper{
     display: flex;
     flex-direction: row;   
     align-items: center;
+    justify-content: space-between;
 }
-.logo{
+header .logo{
     color:red;
-    font-family: Arial black;
-    font-size:40px;
+    font-family: Arial;
+    font-size:50px;
+    margin-left: 5px;
 }
 header nav a{
     text-decoration: none;
@@ -34,4 +37,15 @@ header nav a:hover{
     text-decoration: none;
     color:#fff;
     margin-right: 10px;
+}
+.filme-principal{
+    border:1px solid #000;
+    font-size:16px;
+    background-image: url("../img/capa-prision-break.jpg");
+    height: 400px;
+    background-size: cover;
+    opacity: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
